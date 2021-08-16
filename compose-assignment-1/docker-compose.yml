@@ -1,11 +1,8 @@
-version: '2'
+version: '3.3'
 
 services:
   drupal:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: custom-drupal
+    image: drupal:8.8.2
     ports:
       - '8080:80'
     volumes:
