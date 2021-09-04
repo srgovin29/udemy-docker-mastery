@@ -4,6 +4,9 @@ services:
   drupal:
     build:
       context: .
+      args: 
+        - buildno: 1
+        - gitcommithash: test33f
       dockerfile: Dockerfile
     image: custom-drupal
     ports:
